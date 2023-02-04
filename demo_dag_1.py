@@ -36,7 +36,7 @@ t0 = DummyOperator(task_id='start')
 t1 = PythonOperator(
         task_id="output_sql_demo_dag_1",
         python_callable=output_sql,
-        op_kwargs= {'sql_code': 'SELECT 1'}
+        op_kwargs= {'sql_code': 'SELECT 2'}
     )
 
 t0 >> t1
