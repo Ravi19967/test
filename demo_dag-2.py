@@ -24,7 +24,7 @@ dag = DAG(
             name,
             start_date=datetime(2019, 1, 1),
             max_active_runs=1,
-            schedule_interval='0 12 8-14,22-28 * 6',
+            schedule_interval=0 8 * * *,
             default_args=default_args,
             catchup=False,
             doc_md = __doc__,
