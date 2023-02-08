@@ -36,7 +36,7 @@ t0 = DummyOperator(task_id='start')
 t1 = PythonOperator(
         task_id="output_sql_demo",
         python_callable=output_sql,
-        op_kwargs= {'sql_code': 'SELECT * FROM TABLE'}
+        op_kwargs= {'sql_code': 'SELECT * FROM ANOTHER_TABLE'}
     )
 
 t0 >> t1
